@@ -122,4 +122,7 @@ export class FoodorderService {
   addCard(card:Food){
     this.cartlist.push(card)
   }
+  removefromcart(i:number){
+   this.cartlist.splice(i,1)
+  }
 }

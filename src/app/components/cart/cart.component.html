@@ -1,7 +1,7 @@
 <section class="container my-4">
     <h5 class="text-center mb-4">Cart Page</h5>
     <div class="row">
-        <div class="">
+        <div *ngIf="cartlist.length>0 ; else new">
             <div *ngFor="let cart of cartlist ;let i =index">
                 <div class="d-flex align-items-baseline justify-content-around flex-wrap my-2" style="border: 1px solid red;padding: 1rem ">
                     <div>
@@ -20,5 +20,8 @@
             </div>
            
         </div>
+        <ng-template #new>
+            <h3 class="text-center">Cart Page Is Empty</h3>
+        </ng-template>
         </div>
 </section>
