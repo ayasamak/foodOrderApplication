@@ -1,0 +1,24 @@
+<section class="container my-4">
+    <h5 class="text-center mb-4">Cart Page</h5>
+    <div class="row">
+        <div class="">
+            <div *ngFor="let cart of cartlist ;let i =index">
+                <div class="d-flex align-items-baseline justify-content-around flex-wrap my-2" style="border: 1px solid red;padding: 1rem ">
+                    <div>
+                        <img [src]="cart.img" class="rounded-circle" style="width: 6rem; height: 6em;object-fit: cover;">
+                    </div>
+                    <div>
+                      <h5>{{cart.head}}</h5>
+                    </div>
+                    <div>
+                        <p class="fw-bold">{{cart.price}}</p>
+                    </div>
+                    <div>
+                      <button class="btn btn-danger" (click)="removeItem(i)">Remove</button>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        </div>
+</section>
