@@ -11,8 +11,8 @@ export class AppComponent {
   title = 'foodOrders';
   favIcon: HTMLLinkElement | any = document.querySelector("#appIcon");
   constructor(private titleService: Title){
-    this.favIcon.href="/assets/breakfist.jpeg"
-    this.titleService.setTitle("online Order");
+    this.favIcon.href="/assets/logo.webp"
+    this.titleService.setTitle("Food Order Application");
   }
   
 }
