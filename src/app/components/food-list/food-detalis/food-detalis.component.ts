@@ -21,6 +21,5 @@ addtocard(){
   this.FoodorderService.$CARDCOUNTER.subscribe(data=>this.previous=data)
   this.FoodorderService.$CARDCOUNTER.next(++this.previous)
   this.FoodorderService.addCard(this.food)
-  this.router.navigate(['./addcart'])
 }
 }

@@ -11,4 +11,7 @@ export class HeaderComponent {
  constructor(public FoodorderService:FoodorderService){
   this.FoodorderService.$CARDCOUNTER.subscribe(data=>this.cardcounter=data)
 }
+searchChanged(e:any){
+  this.FoodorderService.$SearchTerm.next(e.target.value)
+}
 }

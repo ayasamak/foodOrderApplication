@@ -9,8 +9,10 @@ import { Router } from '@angular/router';
 })
 export class FoodListComponent {
   foodList:any=[]
+  filtername:string=''
 constructor(public FoodorderService:FoodorderService,public router:Router){
   this.foodList=this.FoodorderService.foodList
+  this.FoodorderService.$SearchTerm.subscribe(data=>this.filtername=data)
 }
 
 detail(index:number){

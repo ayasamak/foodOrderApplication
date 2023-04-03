@@ -13,7 +13,7 @@ export class FoodorderService {
     rate:4,
     country:'egypt',
     clock:'10-20',
-    price:'10.00 EGP'
+    price:10.00
   },
   {
     id:1,
@@ -22,7 +22,7 @@ export class FoodorderService {
     rate:5,
     country:'egypt',
     clock:'5-10',
-    price:'7.00 EGP'
+    price:7.00
   },
   {
     id:2,
@@ -31,7 +31,7 @@ export class FoodorderService {
     rate:3,
     country:'egypt',
     clock:'3-7',
-    price:'10.00 EGP'
+    price:10.00
   },
   {
     id:3,
@@ -40,7 +40,7 @@ export class FoodorderService {
     rate:2,
     country:'egypt',
     clock:'20-30',
-    price:'50.00 EGP'
+    price:50.00
   },{
     id:4,
     img:'../../assets/pasta3.webp',
@@ -48,7 +48,7 @@ export class FoodorderService {
     rate:5,
     country:'egypt',
     clock:'10-20',
-    price:'20.00 EGP'
+    price:20.00
   },{
     id:5,
     img:'../../assets/chekien.jpeg',
@@ -56,7 +56,7 @@ export class FoodorderService {
     rate:4,
     country:'egypt',
     clock:'25-30',
-    price:'70.00 EGP'
+    price:70.00
   },{
     id:6,
     img:'../../assets/dessert.jpeg',
@@ -64,7 +64,7 @@ export class FoodorderService {
     rate:3,
     country:'egypt',
     clock:'10-20',
-    price:'30.00 EGP'
+    price:30.00
   },{
     id:7,
     img:'../../assets/breakfist4.webp',
@@ -72,7 +72,7 @@ export class FoodorderService {
     rate:2,
     country:'egypt',
     clock:'5-10',
-    price:'13.00 EGP',
+    price:13.00,
   },
     {
       id:8,
@@ -81,7 +81,7 @@ export class FoodorderService {
       rate:3,
       country:'egypt',
       clock:'5-10',
-      price:'5.00 EGP'
+      price:5.00
     },
     {
       id:9,
@@ -90,7 +90,7 @@ export class FoodorderService {
       rate:5,
       country:'egypt',
       clock:'5-20',
-      price:'30.00 EGP'
+      price:30.00
     },{
       id:10,
       img:'../../assets/chekien2.jpeg',
@@ -98,7 +98,7 @@ export class FoodorderService {
       rate:4,
       country:'egypt',
       clock:'7-10',
-      price:'20.00 EGP'
+      price:20.00
     },{
       id:11,
       img:'../../assets/breakfist3.jpeg',
@@ -106,11 +106,12 @@ export class FoodorderService {
       rate:5,
       country:'egypt',
       clock:'1-10',
-      price:'10.00 EGP'
+      price:10.00
     }
   ]
   cartlist:Food[]=[]
   $CARDCOUNTER=new BehaviorSubject<number>(0)
+  $SearchTerm=new BehaviorSubject<string>('')
   constructor() { }
 
   getfoodbyid(index:number){

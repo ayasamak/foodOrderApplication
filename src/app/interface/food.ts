@@ -5,5 +5,5 @@ export interface Food {
     rate:number,
     country:string,
     clock:string,
-    price:string
+    price:number
 }
